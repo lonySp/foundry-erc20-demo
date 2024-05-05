@@ -1,5 +1,4 @@
 // SPDX-License-Identifier: MIT
-
 pragma solidity ^0.8.18;
 
 contract ManualToken {
@@ -21,7 +20,7 @@ contract ManualToken {
         return s_balances[_owner];
     }
 
-    function transfer(address _to,uint256 _amount) public {
+    function transfer(address _to, uint256 _amount) public {
         uint256 previousBalances = balanceOf(msg.sender) + balanceOf(_to);
         s_balances[msg.sender] -= _amount;
         s_balances[_to] += _amount;
