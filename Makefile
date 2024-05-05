@@ -31,9 +31,9 @@ remove:
 
 # Install dependencies
 install:
-	forge install Cyfrin/foundry-devops@0.0.11 --no-commit
-	forge install foundry-rs/forge-std@v1.5.3 --no-commit
-	forge install openzeppelin/openzeppelin-contracts@v4.8.3 --no-commit
+	forge install Cyfrin/foundry-devops --no-commit
+	forge install foundry-rs/forge-std --no-commit
+	forge install openzeppelin/openzeppelin-contracts --no-commit
 
 # Update dependencies
 update:
